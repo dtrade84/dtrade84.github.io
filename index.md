@@ -1,6 +1,8 @@
 ## Hi! I'm Daniel,
 
-Service Management Specialist | Memorial Healthcare System
+Service Management Specialist 
+
+Memorial Healthcare System
 
 Data Scientist
 
