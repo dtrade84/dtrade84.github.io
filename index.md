@@ -6,4 +6,5 @@ Data Scientist
 Gaiinesville, FL
 
 Bs Data Management / Data Analysis
+
 Western Governors University
