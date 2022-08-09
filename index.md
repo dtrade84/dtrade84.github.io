@@ -1,6 +1,6 @@
 ## Hi! I'm Daniel,
 
-Service Management Specialist for Memorial Healthcare System in South Florida
+Service Management Specialist | Memorial Healthcare System
 
 Data Scientist
 
