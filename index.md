@@ -1,5 +1,4 @@
-## Hi!
-## I'm Daniel,
+## Hi! I'm Daniel,
 
 You can use the [editor on GitHub](https://github.com/dtrade84/dtrade84.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
