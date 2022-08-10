@@ -8,13 +8,15 @@ header_pages:
 
 logo: logo.jpg
 
-description: > 
-           Data Scientist 
-           Service Management Specialist
-           Memorial Healthcare System 
-           Gainesville, FL 
-           Bs Data Management / Data Analysis 
-           Western Governors University
+description: |\n
+··Data Scientist\n
+··Service Management Specialist\n
+··Memorial healthcare System\n
+··Gainesville, FL\n
+··Bs Data Management / Data Analysis\n
+··Western Governors University\n
+··\n
+
 
 email: dtrade84@outlook.com
 
