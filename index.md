@@ -1,5 +1,3 @@
-## Data Science Portfolio
-
 Daniel Fernandez, CIOS
 
 Data Scientist
