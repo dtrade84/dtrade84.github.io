@@ -16,7 +16,9 @@ description: >
            Bs Data Management / Data Analysis 
            Western Governors University
 
-email: dtrade84@outlooko.com
+email: dtrade84@outlook.com
+
+show_downloads: false
 
 plugins:
   - jekyll-sitemap
