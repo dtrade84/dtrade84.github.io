@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
-
+header_pages:
+  - about.md
+  - portfolio.md
 
