@@ -1,10 +1,8 @@
 ## Data Science Portfolio
 
-Hi! I'm Daniel,
+Daniel Fernandez
 
-Service Management Specialist 
-
-Memorial Healthcare System
+<p>Service Management Specialist | Memorial Healthcare System</p>
 
 Data Scientist
 
