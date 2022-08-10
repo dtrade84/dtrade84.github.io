@@ -1,10 +1,8 @@
 ## Data Science Portfolio
 
-Daniel Fernandez
+Daniel Fernandez, CIOS
 
 <p>Service Management Specialist | Data Scientist | Memorial Healthcare System</p>
-
-Data Scientist
 
 Gaiinesville, FL
 
