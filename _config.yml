@@ -8,7 +8,7 @@ header_pages:
 
 logo: logo.jpg
 
-description: > \n
+description: \n
  Data Scientist\n
  Service Management Specialist\n
  Memorial healthcare System\n
@@ -23,7 +23,7 @@ email: dtrade84@outlook.com
 show_downloads: false
 
 plugins:
-  - jekyll-sitemap
+
   - jekyll-seo-tag
   - jemoji
 
