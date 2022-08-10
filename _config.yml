@@ -1,10 +1,14 @@
 theme: jekyll-theme-minimal
 
+title:
+
 header_pages:
  
   - projects.md
 
 logo: logo.jpg
+
+description: Daniel Fernandez's Data Science Portfolio
 
 email: dtrade84@outlooko.com
 
