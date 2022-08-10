@@ -2,7 +2,7 @@
 
 Daniel Fernandez
 
-<p>Service Management Specialist | Memorial Healthcare System</p>
+<p>Service Management Specialist | Data Scientist | Memorial Healthcare System</p>
 
 Data Scientist
 
