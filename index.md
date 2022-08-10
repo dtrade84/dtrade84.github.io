@@ -1,8 +1,6 @@
-Daniel Fernandez, CIOS
-
 Data Scientist
 
-<p>Service Management Specialist | Memorial Healthcare System</p>
+Service Management Specialist | Memorial Healthcare System
 
 Gaiinesville, FL
 
