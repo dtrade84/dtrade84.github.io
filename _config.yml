@@ -3,13 +3,13 @@ title: Daniel Fernandez
 email: dtrade84@outlook.com
 logo: logo.jpg
 
-description: >-
-    Data Scientist
-    Service Management Specialist
-    Memorial healthcare System                 
-    Gainesville, FL 
-    Bs Data Management / Data Analysis
-    Western Governors University 
+description: 
+    Data Scientist <br>
+    Service Management Specialist <br>
+    Memorial healthcare System <br>              
+    Gainesville, FL <br> 
+    Bs Data Management / Data Analysis <br>
+    Western Governors University <br> 
 plugins:
    - jekyll-sitemap
    - jekyll-seo-tag
