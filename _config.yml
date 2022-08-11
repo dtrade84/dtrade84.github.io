@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 
-background-image: bg1.jpg
+background-image: "bg1.jpg"
 
 title: Daniel Fernandez
 
