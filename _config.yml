@@ -3,7 +3,7 @@ theme: jekyll-theme-minimal
 background-image: "bg1.jpg"
 
 title: Daniel Fernandez
-
+email: dtrade84@outlook.com
 header_pages:
  
   - projects.md
@@ -17,11 +17,7 @@ description: |
    * Gainesville, FL
    * Bs Data Management / Data Analysis
    * Western Governors University
- 
- 
-email: dtrade84@outlook.com
 
-show_downloads: false
 
 plugins:
 
