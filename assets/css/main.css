@@ -432,13 +432,10 @@ input, select, textarea {
 
 	select {
 		background-image: url("bg1.jpg");
-		background-size: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-attachment: fixed;
-		#height: 2.75rem;
-		#padding-right: 2.75rem;
-		#text-overflow: ellipsis;
+		
 	}
 
 		select option {
@@ -1159,8 +1156,9 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg1.jpg");
+			background-image: url("bg1.jpg");
 			background-position: center;
+			background-attachment: fixed;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
@@ -1587,7 +1585,8 @@ input, select, textarea {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url("bg1.jpg");
+					background-attachment:" fixed;
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
