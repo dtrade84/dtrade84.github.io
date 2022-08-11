@@ -2,13 +2,11 @@
 <html>
 <body>
 
-<h2>Background Image</h2>
 
 
-<p style="background-image: url('bg1.jpg');">
 
-</p>
+<img src="bg1.jpg" alt=”backgroound”>
 
-</body>
+
 </html>
 
