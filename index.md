@@ -5,7 +5,7 @@
 
 
 
-<img src="bg1.jpg" alt=”backgroound”>
+<img src="bg1.jpg" alt=”background”>
 </body>
 
 </html>
