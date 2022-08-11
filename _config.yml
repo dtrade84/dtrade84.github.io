@@ -2,15 +2,15 @@ theme: jekyll-theme-minimal
 title: Daniel Fernandez
 email: dtrade84@outlook.com
 logo: logo.jpg
-description: |
-    ### Heading
+description: 
+    
 
-    * Data Scientist
-    * Service Management Specialist 
-    * Memorial healthcare System                 
-    * Gainesville, FL
-    * Bs Data Management / Data Analysis
-    * Western Governors University
+    "Data Scientist
+    Service Management Specialist 
+    Memorial healthcare System                 
+    Gainesville, FL
+    Bs Data Management / Data Analysis
+    Western Governors University"
 plugins:
    - jekyll-sitemap
    - jekyll-seo-tag
