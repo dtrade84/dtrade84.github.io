@@ -6,7 +6,7 @@
 
 
 <img src="bg1.jpg" alt=”backgroound”>
-
+</body>
 
 </html>
 
