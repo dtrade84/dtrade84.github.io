@@ -435,6 +435,7 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-attachment: fixed;
+		background-size: auto;
 		
 	}
 
@@ -1159,7 +1160,7 @@ input, select, textarea {
 			background-image: url("bg1.jpg");
 			background-position: center;
 			background-attachment: fixed;
-			background-size: cover;
+			background-size: auto;
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
@@ -1587,7 +1588,7 @@ input, select, textarea {
 					background-position: center;
 					background-image: url("bg1.jpg");
 					background-attachment:" fixed;
-					background-size: 20px 20px;
+					background-size: auto;
 					background-repeat: no-repeat;
 				}
 
