@@ -431,14 +431,14 @@ input, select, textarea {
 		}
 
 	select {
-		background-image: url("/bg1.jpg");
+		background-image: url("bg1.jpg");
 		background-size: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-attachment: fixed;
-		height: 2.75rem;
-		padding-right: 2.75rem;
-		text-overflow: ellipsis;
+		#height: 2.75rem;
+		#padding-right: 2.75rem;
+		#text-overflow: ellipsis;
 	}
 
 		select option {
