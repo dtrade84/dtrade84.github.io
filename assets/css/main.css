@@ -1,10 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -433,7 +429,7 @@ input, select, textarea {
 		background-image: url("bg1.jpg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-size: auto;
+		
 		
 	}
 
@@ -643,7 +639,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			background-image: url("bg1.jpg");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -1136,7 +1132,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("bg1.jpg");
 			background-size: auto,
  256px 256px;
 			
@@ -1584,7 +1580,6 @@ input, select, textarea {
 					border-radius: 100%;
 					background-image: url("bg1.jpg");
 					background-attachment:" fixed;
-					background-size: auto;
 					background-repeat: no-repeat;
 				}
 
