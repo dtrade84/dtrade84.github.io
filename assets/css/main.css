@@ -187,7 +187,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #c0c0c0;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -251,7 +251,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #ffffff;
+		border-left: solid 4px #c0c0c0;
 		font-style: italic;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
