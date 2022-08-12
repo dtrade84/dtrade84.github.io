@@ -26,7 +26,7 @@
 			height: 100%;
 		}
 
-		&:before {
+		<!--&:before {
 			@include vendor('transition', 'background-color #{_duration(bg)} ease-in-out');
 			@include vendor('transition-delay', '#{_duration(intro)}');
 			background-image:		linear-gradient(to top, #{_palette(bg-overlay)}, #{_palette(bg-overlay)}),
@@ -38,7 +38,7 @@
 			background-repeat:		no-repeat,
 									repeat;
 			z-index: 2;
-		}
+		}-->
 
 		&:after {
 			@include vendor('transform', 'scale(1.125)');
