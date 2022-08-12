@@ -1372,12 +1372,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-preload #header {
-			-moz-filter: blur(0.125rem);
-			-webkit-filter: blur(0.125rem);
-			-ms-filter: blur(0.125rem);
-			filter: blur(0.125rem);
-		}
+		
 
 			body.is-preload #header > * {
 				opacity: 0;
