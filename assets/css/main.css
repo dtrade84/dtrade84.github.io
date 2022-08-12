@@ -282,7 +282,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #ffffff;
+		border-bottom: solid 1px #c0c0c0;
 		margin: 2.75rem 0;
 	}
 
@@ -373,7 +373,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #c0c0c0;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -399,7 +399,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px #c0c0c0;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -439,7 +439,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
+			color: #c0c0c0;
 			background: #1b1f22;
 		}
 
