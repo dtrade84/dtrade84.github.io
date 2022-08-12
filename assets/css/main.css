@@ -373,7 +373,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #c0c0c0;
+		color: #757474;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -439,7 +439,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #c0c0c0;
+			color: #757474;
 			background: #1b1f22;
 		}
 
