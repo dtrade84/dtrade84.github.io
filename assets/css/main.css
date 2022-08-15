@@ -141,7 +141,7 @@ input, select, textarea {
 		color: #6c6c6c;
 		font-family: "Lucida Console", monospace;
 		font-weight: 300;
-		font-size: 2em;
+		font-size: 1.5em;
 		line-height: 1.65;
 	}
 
@@ -169,7 +169,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0 font-size: 2em;
+		margin: 0 0 2rem 0 font-size: 1.5em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
