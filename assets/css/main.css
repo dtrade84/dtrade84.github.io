@@ -1031,7 +1031,7 @@ input, select, textarea {
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			border-top-width: 0 px;
+			style="text-align: center;
 			border-bottom-width: 1px;
 			max-width: 100%;
 		}
