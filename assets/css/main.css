@@ -138,7 +138,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #c0c0c0;
+		color: #6c6c6c;
 		font-family: "Lucida Console", "Courier New", monospace;
 		font-weight: 300;
 		font-size: 1rem;
@@ -160,7 +160,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #c0c0c0;
+		color: #6c6c6c;
 		font-weight: 600;
 	}
 
@@ -173,7 +173,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #c0c0c0;
+		color: #6c6c6c;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
