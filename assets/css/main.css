@@ -141,7 +141,7 @@ input, select, textarea {
 		color: #6c6c6c;
 		font-family: "Lucida Console", monospace;
 		font-weight: 300;
-		font-size: 1.5rem;
+		font-size: 1.5em;
 		line-height: 1.65;
 	}
 
@@ -169,7 +169,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0 font-size: 2em;
+		margin: 0 0 2rem 0 font-size: 1.5em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1319,7 +1319,7 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.2rem;
+			font-size: 1em;
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
