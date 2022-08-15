@@ -1148,25 +1148,7 @@ input, select, textarea {
 					height: calc(2rem + 1px);
 				}
 
-			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
-				line-height: 4.75rem;
-			}
-
-				#header .logo .icon:before {
-					font-size: 1.75rem;
-				}
-
-			#header .content .inner {
-				padding: 2.5rem 1rem;
-			}
-
-			#header .content p {
-				line-height: 1.875;
-			}
-
-		}
+		
 
 		@media screen and (max-width: 480px) {
 
