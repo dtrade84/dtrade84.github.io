@@ -112,7 +112,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #0027FF !important;
+			color: #357EC7 !important;
 			text-decoration: none;
 		}
 
@@ -2620,7 +2620,7 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #34495E;
+			color: #357EC7;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -3074,7 +3074,7 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: fixed;
-				background-color: #0027FF;
+				background-color: #357EC7;
 				background-image: url("/images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: no-repeat,							no-repeat;
