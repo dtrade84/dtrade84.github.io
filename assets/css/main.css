@@ -3052,6 +3052,7 @@ input, select, textarea {
 				background-attachment: scroll;
 				background-position: top left, center center;
 				background-size: auto,		cover;
+				opacity: 0.5;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
