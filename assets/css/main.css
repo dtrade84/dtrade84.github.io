@@ -3073,13 +3073,13 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				background-color: #0027FF;
 				background-image: url("/images/bg.jpg");
 				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
+				background-repeat: no-repeat,							no-repeat;
 				background-size: auto,							cover;
-				bottom: auto;
+				bottom: 0;
 				left: auto;
 				padding: 4em 4em 6em 4em;
 				position: absolute;
