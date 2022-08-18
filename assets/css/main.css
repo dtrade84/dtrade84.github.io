@@ -1325,8 +1325,8 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
+		font-family: 'Lucida Console', sans-serif;
+		font-weight: 400;
 		color: #777777;
 		font-size: 20pt;
 		line-height: 1.75em;
@@ -1552,17 +1552,17 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 50%;
 		}
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 50%;
 		}
 
 		.image.featured {
 			display: block;
-			width: 100%;
+			width: 50%;
 			margin: 0 0 2em 0;
 		}
 
