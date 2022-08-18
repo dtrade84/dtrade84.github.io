@@ -1325,7 +1325,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Lucida Console', sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -2096,7 +2096,7 @@ input, select, textarea {
 
 					#main > .panel.intro header p {
 						letter-spacing: -0.015em;
-						font-size: 1.25em;
+						
 						margin: 0.25em 0 0 0;
 					}
 
