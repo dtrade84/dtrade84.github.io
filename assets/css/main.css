@@ -1307,7 +1307,7 @@ input, select, textarea {
 
 	body {
 		background-image: url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
+		background-repeat: no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
@@ -1435,6 +1435,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
+		font-size: 12pt;
 	}
 
 /* Table */
