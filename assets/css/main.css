@@ -1306,7 +1306,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1326,9 +1326,9 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Lucida Console', sans-serif;
-		font-weight: 400;
+		font-weight: 300;
 		color: #777777;
-		font-size: 20pt;
+		font-size: 16pt;
 		line-height: 1.75em;
 	}
 
@@ -1998,6 +1998,7 @@ input, select, textarea {
 				#main > .panel.intro .pic {
 					text-decoration: none;
 					position: relative;
+					marging: auto
 					-moz-flex-grow: 0;
 					-webkit-flex-grow: 0;
 					-ms-flex-grow: 0;
@@ -2025,6 +2026,7 @@ input, select, textarea {
 						position: relative;
 						display: block;
 						position: absolute;
+						marging: auto
 						top: 0;
 						left: 0;
 						width: 100%;
