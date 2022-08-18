@@ -2025,10 +2025,9 @@ input, select, textarea {
 						position: relative;
 						display: block;
 						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
+						margin: auto
+						width: 60%;
+						height: 60%;
 						-moz-object-fit: cover;
 						-webkit-object-fit: cover;
 						-ms-object-fit: cover;
