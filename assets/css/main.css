@@ -1947,8 +1947,6 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #ffffff;
-		opacity: .4;
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2028,8 +2026,8 @@ input, select, textarea {
 						position: absolute;
 						top: 0;
 						left: 0;
-						width: 100%;
-						height: 100%;
+						width: 75%;
+						height: 75%;
 						-moz-object-fit: cover;
 						-webkit-object-fit: cover;
 						-ms-object-fit: cover;
