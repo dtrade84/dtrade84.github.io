@@ -1979,7 +1979,7 @@ input, select, textarea {
 			}
 
 			#main > .panel.intro {
-				padding: 1;
+				padding: .5;
 				height: 20em;
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2090,7 +2090,7 @@ input, select, textarea {
 				}
 
 					#main > .panel.intro header h1 {
-						line-height: 1.25em;
+						line-height: 1em;
 						margin-bottom: 0;
 					}
 
