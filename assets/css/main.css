@@ -1301,7 +1301,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/bg1.jpg");
+		background-image: url("bg1.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
