@@ -3,38 +3,37 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
+@import 'libs/html-grid';
 
 /*
-	Dimension by HTML5 UP
+	Astral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* BG */
+/* Wrapper */
 
-	#bg {
-		body.is-preload & {
-			&:before {
-				background-color: transparent;
-			}
-		}
+	#wrapper {
+		opacity: 1 !important;
 	}
 
-/* Header */
+/* Nav */
 
-	#header {
-		body.is-preload & {
-			> * {
-				opacity: 1;
+	#nav {
+		a {
+			opacity: 1.0;
+
+			&:before,
+			&:after {
+				display: none;
 			}
 
-			@include vendor('filter', 'none');
+			span {
+				top: 0;
+				opacity: 1.0;
 
-			.content {
-				.inner {
-					max-height: none;
-					padding: 3rem 2rem;
-					opacity: 1;
+				&:after {
+					display: none;
 				}
 			}
 		}
@@ -43,8 +42,15 @@
 /* Main */
 
 	#main {
-		article {
-			opacity: 1;
-			margin: (_size(element-margin) * 2) 0 0 0;
+		background: none;
+		box-shadow: none;
+
+		> .panel {
+			background: #ffffff;
+			margin-bottom: 2em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
