@@ -1329,7 +1329,7 @@ input, select, textarea {
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
-		line-height: 1.75em;
+		
 	}
 
 		@media screen and (max-width: 1680px) {
