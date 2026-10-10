@@ -1,161 +1,193 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Fernandez | Cybersecurity &amp; Penetration Testing</title>
+<meta name="description" content="Daniel Fernandez — IT professional pivoting into offensive security. Penetration testing labs, security training, and bug bounty journey.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html>
-	<head>
-		
-		
+<nav class="nav">
+  <a href="#top" class="nav-brand"><span class="prompt">&gt;_</span> dfernandez</a>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#training">Training</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#writeups">Writeups</a>
+    <a href="#bounty">Bug Bounty</a>
+    <a href="#lab">Home Lab</a>
+    <a href="#projects">Background</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-		
-	
-</script>
-		<title>Daniel Fernandez | Data Science Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		
-		<!-- Wrapper-->
-			<div id="wrapper">
+<header class="hero" id="top">
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span class="terminal-title">daniel@security: ~</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$</span> whoami</p>
+      <p class="typed">daniel_fernandez <span class="cursor">▊</span></p>
+      <p><span class="prompt">$</span> cat mission.txt</p>
+      <p class="typed-2">15 years in IT operations. Now breaking things<br>ethically — penetration testing, security labs,<br>and the road to CEH.</p>
+      <p><span class="prompt">$</span> <span class="cursor">▊</span></p>
+    </div>
+  </div>
+  <h1>Daniel Fernandez</h1>
+  <p class="tagline">Cybersecurity · Penetration Testing · Bug Bounties</p>
+  <p class="location">Davie, FL · Open to remote</p>
+  <div class="hero-cta">
+    <a href="#writeups" class="btn">Lab Writeups</a>
+    <a href="DFernandezITResume.pdf" class="btn ghost" target="_blank" rel="noopener">Résumé (PDF)</a>
+  </div>
+</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="DFernandezDSResume.pdf" class="icon fa-file-alt" target="_blank"><span>Resume</span></a>
-						<a href="mailto:dtrade84@outlook.com" class="icon solid fa-envelope"><span>Email</span></a>
-						<a href="https://github.com/dtrade84" class="icon brands fa-github"><span>Github</span></a>
-						<a href="https://www.kaggle.com/dtrade84" class="icon brands fa-kaggle"><span>Kaggle</span></a>
-					</nav>
+<main>
 
-				<!-- Main -->
-					<div id="main">
+<section id="about">
+  <h2><span class="prompt">#</span> About</h2>
+  <p>I'm an IT professional with <strong>15 years</strong> across managed services and healthcare IT — most recently as a Level II Service Management Specialist on a 24/7 service desk — now pivoting into <strong>offensive security</strong>.</p>
+  <p>The pivot is deliberate: years of triaging incidents, flagging anomalies across 800,000+ records, and responding to a system-wide outage taught me how defenders think. Now I'm learning to think like an attacker — <strong>legally, in labs, and under authorization only</strong> — through hands-on penetration testing practice, security coursework, and the road to the CEH certification.</p>
+  <div class="stats">
+    <div class="stat"><span class="stat-num">15</span><span class="stat-label">years in IT</span></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">certifications earned</span></div>
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">certs in progress</span></div>
+  </div>
+</section>
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Daniel Fernandez</h1>
-									<p>Data Scientist<br>
-									Miami, FL<br>
-									Bs Data Management / Data Analytics<br>
-									Western Governors University</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<img src="logo.png" alt="logo" style="width:300px;height:300px;"/>
-								</a>
-							</article>
+<section id="training">
+  <h2><span class="prompt">#</span> Certifications &amp; Training</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Earned</h3>
+      <ul class="cert-list">
+        <li><span class="badge done">✓</span> CompTIA A+</li>
+        <li><span class="badge done">✓</span> CompTIA Network+</li>
+        <li><span class="badge done">✓</span> CompTIA IT Operations Specialist (CIOS)</li>
+        <li><span class="badge done">✓</span> ITIL 4 Foundation</li>
+        <li><span class="badge done">✓</span> OPSWAT Certified File Security Associate (OCFA)</li>
+        <li><span class="badge done">✓</span> B.S., Data Management / Data Analytics — WGU</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>In Progress</h3>
+      <ul class="cert-list">
+        <li><span class="badge wip">…</span> Google Cybersecurity Professional Certificate
+          <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+        </li>
+        <li><span class="badge wip">…</span> Certified Ethical Hacker (CEH) — EC-Council
+          <div class="progress"><div class="progress-bar" style="width:20%"></div></div>
+        </li>
+        <li><span class="badge wip">…</span> TryHackMe &amp; HackTheBox — active lab work</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Projects</h2>
-								</header>
-								
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://github.com/dtrade84/Python-For-Data-Science" class="image fit"><img src="pyds.jpg" alt=""></a>
-											<p><br></a>Python For Data Science</p>
-											
-											
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://github.com/dtrade84/Medical-Appointment-No-Shows/blob/main/Investigate_a_Dataset.ipynb" class="image fit"><img src="mdds.jpg" alt=""></a>
-											<p><br>Medical Appointment No-Shows</p>
-											
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://github.com/dtrade84/A-B-Testing-Page-Conversion/blob/main/Analyze_ab_test_results_notebook%20(1)%20(1)%20(1)%20(1).ipynb" class="image fit"><img src="abds.jpg" alt=""></a>
-											<p><br>A/B Testing: Page Conversion<p>
-											
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://github.com/dtrade84/Data-Modeling-with-Postgres" class="image fit"><img src="dm.jpeg" alt=""></a>
-											<p><br>Data Modeling with PostgreSQL<p>
-											
-										</div>
-									</div>
-								</section>
-				
-								<header>
-									<h2>Kaggle</h2>
-								</header>
-				
-				                                <section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://www.kaggle.com/code/dtrade84/big-data-derby-analysis" class="image fit"><img src="bdd22.jpg" alt=""></a>
-											<p><br></a>Big Data Derby 2022</p>
-											
-											
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://www.kaggle.com/code/dtrade84/madden-23-player-ratings-analysis" class="image fit"><img src="m23.png" alt=""></a>
-											<p><br></a>Madden 23 Player Ratings Analysis</p>
-											
+<section id="methodology">
+  <h2><span class="prompt">#</span> Methodology &amp; Tools</h2>
+  <p class="section-sub">How I approach a test — practiced in labs, applied with discipline.</p>
+  <ol class="killchain">
+    <li><strong>Reconnaissance</strong> — passive footprinting, DNS enumeration, service discovery</li>
+    <li><strong>Scanning &amp; Enumeration</strong> — Nmap, service versioning, share and user enumeration</li>
+    <li><strong>Vulnerability Analysis</strong> — mapping findings to exposures, manual verification</li>
+    <li><strong>Exploitation</strong> — fundamentals in lab environments, privilege escalation basics</li>
+    <li><strong>Reporting</strong> — structured findings with severity, evidence, and remediation guidance</li>
+  </ol>
+  <div class="tools">
+    <span class="tool">Kali Linux <em>lab</em></span>
+    <span class="tool">Nmap <em>lab</em></span>
+    <span class="tool">Burp Suite <em>learning</em></span>
+    <span class="tool">Wireshark <em>lab</em></span>
+    <span class="tool">Metasploit <em>lab</em></span>
+    <span class="tool">Linux <em>proficient</em></span>
+    <span class="tool">Python <em>proficient</em></span>
+    <span class="tool">Active Directory <em>6 yrs</em></span>
+    <span class="tool">Networking <em>Net+</em></span>
+  </div>
+  <p class="fineprint">Tool labels are honest: <em>lab</em> = hands-on in practice environments (TryHackMe / HackTheBox); <em>learning</em> = currently studying.</p>
+</section>
 
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://github.com/dtrade84/Madden-24-Player-Ratings-Analysis" class="image fit"><img src="m24.png" alt=""></a>
-											<p><br></a>Madden 24 Player Ratings Analysis</p>
-											
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="https://www.kaggle.com/code/dtrade84/titanic-problem" class="image fit"><img src="titanic.jpeg" alt=""></a>
-											<p><br></a>Titanic Problem</p>
-											
-											
-										</div>
-									</div>
-								</section>
-							</article>
+<section id="writeups">
+  <h2><span class="prompt">#</span> Lab Writeups</h2>
+  <p class="section-sub">Notes from the lab. Retired machines only — no live spoilers, ever.</p>
+  <div class="grid-2">
+    <a class="card link-card" href="kali-linux-cheat-sheet.html">
+      <h3>📟 Kali Linux CLI Cheat Sheet</h3>
+      <p>My complete command reference, organized by engagement phase — daily driver, recon &amp; enumeration, exploitation, post-exploitation, wireless. Built from scratch and verified.</p>
+      <span class="card-tag">resource</span>
+    </a>
+    <div class="card placeholder">
+      <h3>🧪 TryHackMe Room Writeups</h3>
+      <p>In progress — writeups land here as I complete rooms. Methodology notes, dead ends included: the failures teach more than the flags.</p>
+      <span class="card-tag">coming soon</span>
+    </div>
+  </div>
+</section>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+<section id="bounty">
+  <h2><span class="prompt">#</span> Bug Bounty</h2>
+  <div class="card">
+    <p>Currently in the training phase: methodology first, programs second. HackerOne and Bugcrowd profiles go live here once I'm submitting.</p>
+    <p class="section-sub">Scope discipline is non-negotiable — authorized targets only, full report quality on every submission.</p>
+    <span class="card-tag">in training</span>
+  </div>
+</section>
 
-					</div>
+<section id="lab">
+  <h2><span class="prompt">#</span> Home Lab</h2>
+  <div class="card">
+    <ul class="lab-list">
+      <li><strong>Attack platform:</strong> Kali Linux — persistent encrypted USB (Ventoy multiboot) plus VM</li>
+      <li><strong>Practice ranges:</strong> TryHackMe and HackTheBox labs</li>
+      <li><strong>Target VMs:</strong> intentionally vulnerable machines for offline practice</li>
+      <li><strong>Supporting stack:</strong> Parrot OS, Wireshark, Python scripting environment</li>
+    </ul>
+    <p class="fineprint">Everything here runs against lab targets I own or am authorized to test. That boundary is the whole point of the craft.</p>
+  </div>
+</section>
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy;2022. Daniel Fernandez. All Rights Reserved.</li>
-						</ul>
-					</div>
+<section id="projects">
+  <h2><span class="prompt">#</span> Data Background</h2>
+  <p class="section-sub">The analyst foundation underneath the security work — kept, reframed.</p>
+  <div class="grid-2">
+    <div class="card">
+      <h3>📊 Anomaly Detection at Scale</h3>
+      <p>QA review methodology across 800,000+ records — flagging outliers for investigation. The same muscle behind identifying anomalous network behavior.</p>
+    </div>
+    <div class="card">
+      <h3>🧪 Experimental Discipline</h3>
+      <p>A/B testing and structured analysis background — hypothesis, control, evidence. Directly transferable to methodical penetration test execution.</p>
+    </div>
+  </div>
+  <p><a href="https://github.com/dtrade84" target="_blank" rel="noopener">More on GitHub →</a></p>
+</section>
 
-			</div>
+<section id="contact">
+  <h2><span class="prompt">#</span> Contact</h2>
+  <div class="card contact-card">
+    <p><span class="prompt">$</span> reach out —</p>
+    <ul>
+      <li>📧 <a href="mailto:dtrade84@outlook.com">dtrade84@outlook.com</a></li>
+      <li>💻 <a href="https://github.com/dtrade84" target="_blank" rel="noopener">github.com/dtrade84</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/contracthitz/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</main>
 
-	</body>
+<footer>
+  <p><span class="prompt">$</span> echo "built with intent, tested with permission"</p>
+  <p class="fineprint">© 2026 Daniel Fernandez · All lab work conducted on authorized targets only.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
